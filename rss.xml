@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Obavestenja</title>
+		<link>https://gelatoitaliana.000webhostapp.com/</link>
+		<description>Obaveštenja sa sajta gelato Italiana.</description>
+		<item>
+			<title>Novi ukusi</title>
+			<description>Nove vrste naših gelato sladoleda.</description>
+			<link>https://gelatoitaliana.000webhostapp.com/index.html</link>
+		</item>
+		<item>
+			<title>Otvaranje novih radnji</title>
+			<description>Nove radnje u Vašoj sredini.</description>
+			<link>https://gelatoitaliana.000webhostapp.com/index.html</link>
+		</item>
+	</channel>
+</rss>
