@@ -612,3 +612,15 @@ img {
 		display: block;
 	}
 }
+@media (max-width: 480px) {
+	#galerija {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 15px 8px 20px 8px;
+	}
+	#galerija .slike {
+		width: auto;
+		padding: 4px;
+		margin: 0;
+	}
+}
