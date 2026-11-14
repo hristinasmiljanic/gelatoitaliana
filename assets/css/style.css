@@ -420,3 +420,195 @@ input[type=submit]:hover {
 	box-shadow: 0px 1px #e2e2e2;
 }
 
+/* RESPONSIVE */
+
+/* ===== Opste ===== */
+img {
+	max-width: 100%;
+}
+
+/* ===== TABLET (do 992px) ===== */
+@media (max-width: 992px) {
+
+	/* header */
+	#logo img { margin-left: 20px; }
+	nav ul { margin: 20px 20px; }
+	nav ul li { width: auto; padding: 0px 8px; }
+	nav ul li a { font-size: 19px; }
+
+	/* pocetna */
+	.naslov { width: 40%; padding: 50px 0px; }
+	.naslov h1 { font-size: 36px; }
+	#naslovPrviPocetna h2 { width: 60%; font-size: 38px; }
+	#tekstLeveSlike h3 { width: 60%; font-size: 32px; }
+	.redovi { height: auto; padding-bottom: 20px; }
+	.redovi p { font-size: 18px; }
+
+	/* o nama */
+	.opis_vrsta, .opis_vrsta2 { width: 60%; }
+	.slikaSadrzaj2, .slikaSadrzaj3 { width: 30%; }
+
+	/* galerija 
+	#galerija { margin-left: 0; text-align: center; }
+	.slike { width: 33.33%; box-sizing: border-box; }
+	.slike img { height: 300px; }
+*/
+	/* kontakt */
+	#kontakt { padding-left: 5%; }
+	#forma { width: 45%; }
+	#info { width: 30%; padding: 25px; box-sizing: border-box; }
+
+	/* autor */
+	#slikaAutor { width: 30%; }
+	#tekstAutor { width: 40%; box-sizing: border-box; }
+	#tekstAutor p { line-height: 36px; }
+}
+
+/* ===== TELEFON (do 768px) ===== */
+@media (max-width: 768px) {
+
+	/* header: logo gore, meni ispod */
+	header { text-align: center; }
+	#logo { float: none; }
+	#logo img { float: none; margin-left: 0; }
+	nav ul { margin: 10px 0px; text-align: center; }
+	nav ul li { display: inline-block; width: auto; padding: 5px 8px; }
+	nav ul li a { font-size: 18px; }
+
+	/* cover slika (fixed ne radi na telefonima) */
+	#cover-slika {
+		height: 350px;
+		background-attachment: scroll;
+	}
+	.naslov {
+		width: 80%;
+		padding: 25px 0px;
+		top: 50%;
+		left: 10%;
+	}
+	.naslov h1 { font-size: 30px; }
+	.naslov:hover { width: 80%; }
+	#naslov2 { margin-top: 30px; padding: 10px; }
+
+	/* početna: slike jedna ispod druge */
+	#sadrzaj { overflow: hidden; }
+	#naslovPrviPocetna h2 { width: 85%; font-size: 30px; }
+	.slikaSadrzaj {
+		width: 90%;
+		float: none;
+		margin: 15px auto;
+	}
+	#tekstLeveSlike h3 { width: 85%; font-size: 26px; }
+	.redovi {
+		width: 94%;
+		height: auto;
+		float: none;
+		margin: 15px auto;
+		padding-bottom: 20px;
+	}
+	.redovi h4 { font-size: 26px; }
+	.redovi p { font-size: 17px; }
+
+	/* footer */
+	footer { padding: 20px; text-align: center; }
+	footer a { float: none; display: inline-block; }
+
+	/* o nama */
+	.slikaSadrzaj2, .slikaSadrzaj3 {
+		width: 90%;
+		float: none;
+		margin: 15px auto;
+	}
+	.opis_vrsta, .opis_vrsta2 {
+		width: 90%;
+		float: none;
+		margin: 15px auto;
+	}
+	.naslov_vrsta h2, .naslov_vrsta2 h2 { font-size: 28px; }
+	.delovi_1, .delovi_2 { overflow: hidden; }
+
+	/* cenovnik */
+	.meni .meniBlok {
+		width: 95%;
+		flex-direction: column;
+	}
+	.meni .meniBlok .cene { width: 100%; }
+	.meni .meniBlok .cene .cena { width: 95%; font-size: 16px; }
+	.meni .meniBlok .cene .cena .slikaZaMeni { width: 30%; }
+
+	/* galerija 
+	#galerija { margin-left: 0; overflow: hidden; }
+	.slike { width: 50%; box-sizing: border-box; }
+	.slike img { height: 220px; }
+	.slike:hover { transform: none; }
+*/
+	/* kontakt */
+	#kontakt { padding-left: 0; overflow: hidden; }
+	#forma {
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+	}
+	#info {
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+		padding: 25px;
+		box-sizing: border-box;
+	}
+	#mapa {
+		position: static;
+		width: 90%;
+		margin: 20px auto;
+	}
+	#mapa iframe { width: 100%; }
+
+	/* autor */
+	#slikaAutor {
+		width: 80%;
+		float: none;
+		margin: 20px auto;
+	}
+	#tekstAutor {
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+		padding: 15px;
+		box-sizing: border-box;
+	}
+	#tekstAutor p { line-height: 30px; font-size: 16px; }
+}
+
+/* ===== MALI TELEFONI (do 480px) ===== */
+@media (max-width: 480px) {
+	nav ul li a { font-size: 16px; }
+	.naslov h1 { font-size: 26px; }
+	#naslovPrviPocetna h2 { font-size: 26px; }
+	#tekstLeveSlike h3 { font-size: 22px; }
+	.slike { width: 100%; }
+	.slike img { height: 250px; }
+	input[type=submit] { width: 100%; }
+}
+/* GALERIJA*/
+
+@media (max-width: 768px) {
+	#galerija {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 20px 10px 30px 10px;
+	}
+	#galerija .slike {
+		float: none;
+		width: 46%;
+		padding: 7px;;
+		margin: auto;
+	}
+	#galerija .slike img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		display: block;
+	}
+}
